@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='UTF-8'?><!-- Published by JAX-WS RI at http://jax-ws.dev.java.net. RI's version is JAX-WS RI 2.2-hudson-740-. --><xs:schema xmlns:tns="http://Test/" xmlns:xs="http://www.w3.org/2001/XMLSchema" version="1.0" targetNamespace="http://Test/">
+
+<xs:element name="Tich" type="tns:Tich" />
+
+<xs:element name="TichResponse" type="tns:TichResponse" />
+
+<xs:element name="Timkiem" type="tns:Timkiem" />
+
+<xs:element name="TimkiemResponse" type="tns:TimkiemResponse" />
+
+<xs:element name="getSach" type="tns:getSach" />
+
+<xs:element name="getSachResponse" type="tns:getSachResponse" />
+
+<xs:element name="getnv" type="tns:getnv" />
+
+<xs:element name="getnvResponse" type="tns:getnvResponse" />
+
+<xs:element name="hello" type="tns:hello" />
+
+<xs:element name="helloResponse" type="tns:helloResponse" />
+
+<xs:complexType name="Tich">
+<xs:sequence>
+<xs:element name="a" type="xs:int" />
+<xs:element name="b" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TichResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:int" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getSach">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getSachResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:sachbean" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="sachbean">
+<xs:sequence>
+<xs:element name="gia" type="xs:long" />
+<xs:element name="maloai" type="xs:string" minOccurs="0" />
+<xs:element name="masach" type="xs:string" minOccurs="0" />
+<xs:element name="soluong" type="xs:long" />
+<xs:element name="tensach" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="hello">
+<xs:sequence>
+<xs:element name="name" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="helloResponse">
+<xs:sequence>
+<xs:element name="return" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="getnv">
+<xs:sequence />
+</xs:complexType>
+
+<xs:complexType name="getnvResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:nhanvienbean" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="nhanvienbean">
+<xs:sequence>
+<xs:element name="hoten" type="xs:string" minOccurs="0" />
+<xs:element name="manv" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="Timkiem">
+<xs:sequence>
+<xs:element name="key" type="xs:string" minOccurs="0" />
+</xs:sequence>
+</xs:complexType>
+
+<xs:complexType name="TimkiemResponse">
+<xs:sequence>
+<xs:element name="return" type="tns:sachbean" minOccurs="0" maxOccurs="unbounded" />
+</xs:sequence>
+</xs:complexType>
+</xs:schema>

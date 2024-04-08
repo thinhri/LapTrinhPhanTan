@@ -1,0 +1,10 @@
+Dich all file java ra class
+java *.java
+Dich ra ba moi stub va skel
+rmic <Ten file class> -> rmic TinhToan
+Chay 1 file cua java
+java <ten file class>
+-> java MyServer
+-> java MyClient
+Kich hoat dich vu cua rmi
+start rmiregistry
